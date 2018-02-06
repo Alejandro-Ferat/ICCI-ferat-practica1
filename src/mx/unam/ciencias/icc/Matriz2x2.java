@@ -36,7 +36,9 @@ public class Matriz2x2 {
     public Matriz2x2(double a, double b,
                      double c, double d) {
         this.a = a;
-        // Aquí va su código.
+        this.b = b;
+        this.c = c;
+        this.d = d;
     }
 
     /**
