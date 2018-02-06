@@ -54,7 +54,7 @@ public class Matriz2x2 {
      * @return El elemento <tt>b</tt> de la matriz de 2×2.
      */
     public double getB() {
-        // Aquí va su código.
+        return b;
     }
 
     /**
@@ -62,6 +62,7 @@ public class Matriz2x2 {
      * @return El elemento <tt>c</tt> de la matriz de 2×2.
      */
     public double getC() {
+	return c;
         // Aquí va su código.
     }
 
@@ -70,7 +71,8 @@ public class Matriz2x2 {
      * @return El elemento <tt>d</tt> de la matriz de 2×2.
      */
     public double getD() {
-        // Aquí va su código.
+	return d;
+	// Aquí va su código.
     }
 
     /**
@@ -89,7 +91,7 @@ public class Matriz2x2 {
      * @return La multiplicación con la matriz de 2×2 <tt>m</tt>.
      */
     public Matriz2x2 multiplica(Matriz2x2 m) {
-        // Aquí va su código.
+        return new Matriz2x2(a*m.a + b*m.c, a*m.b + b*m.d, c*m.a + d*m.c, c*m.b +d*m.d ):
     }
 
     /**
@@ -98,7 +100,7 @@ public class Matriz2x2 {
      * @return La multiplicación con la constante <tt>x</tt>.
      */
     public Matriz2x2 multiplica(double x) {
-        // Aquí va su código.
+        return new Matriz2x2(a*x, b*x, c*x, d*x);
     }
 
     /**
@@ -106,7 +108,7 @@ public class Matriz2x2 {
      * @return El determinante de la matriz de 2×2.
      */
     public double determinante() {
-        // Aquí va su código.
+        return new Matriz2x2(ad-cd);
     }
 
     /**
@@ -114,6 +116,8 @@ public class Matriz2x2 {
      * @return una cadena con la representación de la matriz.
      */
     public String toString() {
-        // Aquí va su código.
+		String matriz = new String{};
+		matriz = "";
+         return matriz;
     }
 }
