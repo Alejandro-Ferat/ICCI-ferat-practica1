@@ -10,14 +10,14 @@ package mx.unam.ciencias.icc;
  * a la matriz:</p>
  *
 <pre>
- ⎛ a  b ⎞
+ ⎛ a  b ⎞ 
  ⎝ c  d ⎠
 </pre>
  */
 public class Matriz2x2 {
 
     /* La primera entrada de la matriz. */
-    private double a;
+    private double a; // las variables utilizadas para definir los atributos de una clase se conocen como variables de instancia
     /* La segunda entrada de la matriz. */
     private double b;
     /* La tercera entrada de la matriz. */
@@ -34,8 +34,13 @@ public class Matriz2x2 {
      * @param d la cuarta entrada de la matriz.
      */
     public Matriz2x2(double a, double b,
-                     double c, double d) {
-        this.a = a;
+		     double c, double d){
+		    //Aquí estamos definiendo el método constructor (formalmente hablando no es un método ya que no tiene return
+                    // el objetivo del constructor es asignar valor inicial a cada atributo de un objeto recien instanciado
+  	            //con esto se garantiza que el objeto se cree con un estado válido.
+                   //Podemos asegurar que este es el constructor de la clase ya que el "método" se llama igual que la clase y no tiene especificado
+                   //ningun return, otra cosa importante por decir, es que este "método" solo puede ser llamado por el operador new
+        this.a = a; // aquí se hace uso de la palabra reservada "this" para hacer distinción entre los parámetros del constructor y la correspondiente                       variable de instancia, en este caso estamos igualando el valor del parámero a del constructor con la variable de instancia a. 
         this.b = b;
         this.c = c;
         this.d = d;
@@ -46,7 +51,15 @@ public class Matriz2x2 {
      * @return El elemento <tt>a</tt> de la matriz de 2×2.
      */
     public double getA() {
-        return a;
+	return a;
+
+
+	/** los métodos de acceso son el medio para conocer el valor de los atributos privados de los objetos, no reciben
+	parámetros, pues su objetivo es obtener el valor de un atributo y por la misma razón el valor que devuelven
+	es del tipo definido en el atributo. Si se especifica que un método va a devolver un valor, se debe usar en el cuerpo
+	del mismo la instrucción "return" pues con ella se devuelve el valor y se termina la ejecución del método.
+	*/ 
+        
     }
 
     /**
@@ -63,7 +76,7 @@ public class Matriz2x2 {
      */
     public double getC() {
 	return c;
-        // Aquí va su código.
+	
     }
 
     /**
@@ -72,7 +85,7 @@ public class Matriz2x2 {
      */
     public double getD() {
 	return d;
-	// Aquí va su código.
+
     }
 
     /**
@@ -108,7 +121,9 @@ public class Matriz2x2 {
      * @return El determinante de la matriz de 2×2.
      */
     public double determinante() {
-        return new Matriz2x2(ad-cd);
+         double determinante = new double;
+	 determinante = (a*d -b*c);
+	 return determinante;
     }
 
     /**
@@ -117,7 +132,7 @@ public class Matriz2x2 {
      */
     public String toString() {
 		String matriz = new String{};
-		matriz = "";
+		matriz ="";
          return matriz;
     }
 }
