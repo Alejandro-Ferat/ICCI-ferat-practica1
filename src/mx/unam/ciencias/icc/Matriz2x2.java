@@ -63,7 +63,7 @@ public class Matriz2x2 {
     }
 
     /**
-     * Regresa el elemento <tt>b</tt> de la matriz de 2×2.
+     * Regresa el eleme>nto <tt>b</tt> de la matriz de 2×2.
      * @return El elemento <tt>b</tt> de la matriz de 2×2.
      */
     public double getB() {
@@ -104,7 +104,7 @@ public class Matriz2x2 {
      * @return La multiplicación con la matriz de 2×2 <tt>m</tt>.
      */
     public Matriz2x2 multiplica(Matriz2x2 m) {
-        return new Matriz2x2(a*m.a + b*m.c, a*m.b + b*m.d, c*m.a + d*m.c, c*m.b +d*m.d ):
+        return new Matriz2x2(a*m.a + b*m.c, a*m.b + b*m.d, c*m.a + d*m.c, c*m.b +d*m.d );
     }
 
     /**
@@ -121,7 +121,7 @@ public class Matriz2x2 {
      * @return El determinante de la matriz de 2×2.
      */
     public double determinante() {
-         double determinante = new double;
+         double determinante;
 	 determinante = (a*d -b*c);
 	 return determinante;
     }
@@ -131,8 +131,10 @@ public class Matriz2x2 {
      * @return una cadena con la representación de la matriz.
      */
     public String toString() {
-		String matriz = new String{};
-		matriz ="";
-         return matriz;
+	String matriz;
+
+	matriz = "(" +  a + "," + b + "\n" + c + "," + d + ")" ;
+	
+	return(matriz);
     }
 }
