@@ -22,6 +22,7 @@ public class Matriz2x2 {
     private double b;
     /* La tercera entrada de la matriz. */
     private double c;
+
     /* La cuarta entrada de la matriz. */
     private double d;
 
@@ -132,9 +133,7 @@ public class Matriz2x2 {
      */
     public String toString() {
 	String matriz;
-
-	matriz = "(" +  a + "," + b + "\n" + c + "," + d + ")" ;
-	
+	matriz = "(" + a + "\t" + b + "\n" + c + "\t" + d + ")" ;
 	return(matriz);
     }
 }
